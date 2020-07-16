@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Simple</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container p-5 shadow p-5 mb-5 bg-white rounded mt-5">
+        <h2 class="text-center">Basic JavaScript Problem Sloving</h2>
+        <!--modal-->
+        <!-- Button trigger modal -->
+        <!--inch to feet button-->
+            <button type="button" class="btn btn-primary m-3" data-toggle="modal" data-target="#inchToFeet">
+                Inch To Feet
+            </button>
+            <!--Binary button-->
+            <button type="button" class="btn btn-success m-3" data-toggle="modal" data-target="#leapYear">
+                Leap Year
+            </button>
+            <!--Factorial button-->
+            <button type="button" class="btn btn-info m-3" data-toggle="modal" data-target="#factorial">
+                Factorial Program
+            </button>
+             <!--Fibonacci button-->
+             <button type="button" class="btn btn-danger m-3" data-toggle="modal" data-target="#fibonacci">
+                Fibonacci Program
+            </button>
+
+             <!--Prime button-->
+             <button type="button" class="btn btn-info m-3" data-toggle="modal" data-target="#prime">
+                Prime Number Program
+            </button>
+
+
+        <!-- Modal for inch to feet -->
+        <div class="modal fade" id="inchToFeet" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center" id="exampleModalLabel" style="color: lightcoral;">Convert
+                            Inch to Feet</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-group">
+                            <div class="form-group">
+                                <label for="">Enter Inch </label>
+                                <input type="number" class="form-control" id="inch"
+                                    placeholder="Enter a number of inch">
+                            </div>
+                            <div class="form-group">
+                                <label for="staticEmail">Convert into feet</label>
+                                <input type="text" readonly class="form-control form-control-plaintext" id="feet"
+                                    value="Feet">
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" type="submit" class="btn btn-primary" id="inchToFeet">Convert</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Leap Year Program -->
+        <div class="modal fade" id="leapYear" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center" id="exampleModalLabel" style="color: lightcoral;">Leap Year
+                            Program</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-group">
+                            <div class="form-group">
+                                <label for=""> Year </label>
+                                <input type="number" class="form-control" id="year" placeholder="Enter a year" value="">
+                            </div>
+                            <div class="form-group">
+                                <label for="staticEmail">Your Answer</label>
+                                <input type="text" readonly class="form-control form-control-plaintext" id="leapyear"
+                                    value="Leap Year or not">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" type="submit" class="btn btn-primary" id="leapYear">Check Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for factorial Program -->
+        <div class="modal fade" id="factorial" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center" id="exampleModalLabel" style="color: lightcoral;">Factorial
+                            Mathematics
+                            Program</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-group">
+                            <div class="form-group">
+                                <label for=""> Enter a value </label>
+                                <input type="number" class="form-control" id="number" placeholder="Enter a number"
+                                    value="">
+                            </div>
+                            <div class="form-group">
+                                <label for="staticEmail">Factorial Value :</label>
+                                <input type="text" readonly class="form-control form-control-plaintext"
+                                    id="setFactorial" value="Factorial Value">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" type="submit" class="btn btn-primary" id="Factorial">Check Result</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+          <!-- Modal for fibonacci Program -->
+          <div class="modal fade" id="fibonacci" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title text-center" id="exampleModalLabel" style="color: lightcoral;">Fibonacci
+                          Mathematics
+                          Program</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <form class="form-group">
+                          <div class="form-group">
+                              <label for=""> Enter a value </label>
+                              <input type="number" class="form-control" id="fiboNumber" placeholder="Enter a number"
+                                  value="">
+                          </div>
+                          <div class="form-group">
+                              <label for="staticEmail">Fabonacci Value :</label>
+                              <input type="text" readonly class="form-control form-control-plaintext"
+                                  id="setFibonacci" value="Fibonacci Value">
+                          </div>
+                      </form>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" type="submit" class="btn btn-primary" id="Fibonacci">Check Result</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+        <!-- Modal for prime Program -->
+        <div class="modal fade" id="prime" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel" style="color: lightcoral;">Prime
+                        Number
+                        Program</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group">
+                        <div class="form-group">
+                            <label for=""> Enter a value </label>
+                            <input type="number" class="form-control" id="primeNumber" placeholder="Enter a number"
+                                value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="staticEmail"> Your Answer :</label>
+                            <input type="text" readonly class="form-control form-control-plaintext"
+                                id="setPrime" value="Prime number or not">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" type="submit" class="btn btn-primary" id="Prime">Check Result</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
